@@ -4,11 +4,11 @@ let currentItem = 4;
 loadMoreBtn.onclick = () => {
 
     let boxes = [...document.querySelectorAll('.box-container .box')];
-    for (var i = currentItem ; i< currentItem + 4 ; i++) {
+    for (var i = currentItem; i < currentItem + 4; i++) {
         boxes[i].style.display = 'inline-block';
     }
     currentItem += 4;
-    if(currentItem >= boxes.length) {
+    if (currentItem >= boxes.length) {
         loadMoreBtn.style.display = 'none'
     }
 }
@@ -31,7 +31,7 @@ function cargarEventListeners() {
 function comprarElemento(e) {
     e.preventDefault();
 
-    if(e.target.classList.contains('agregar-carrito')) {
+    if (e.target.classList.contains('agregar-carrito')) {
 
         const elemento = e.target.parentElement.parentElement;
         leerDatosElemento(elemento);
@@ -40,10 +40,10 @@ function comprarElemento(e) {
 
 function leerDatosElemento(elemento) {
     const infoElemento = {
-        imagen: elemento.querySelector('img') .src,
-        titulo: elemento.querySelector('h3') .textContent,
-        precio: elemento.querySelector('precio') .textContent,
-        id: elemento.querySelector('a') .getAttribute('data-id')
+        imagen: elemento.querySelector('img').src,
+        titulo: elemento.querySelector('h3').textContent,
+        precio: elemento.querySelector('precio').textContent,
+        id: elemento.querySelector('a').getAttribute('data-id')
 
     }
     insertarCarrito(elemento)
@@ -79,7 +79,7 @@ function eliminarElemento(e) {
     let elemento,
         elementoId;
 
-    if(e.target.classList.contains('borrar')) {
+    if (e.target.classList.contains('borrar')) {
         e.target.parentElement.parentElement.remove();
         elemento = e.target.parentElement.parentElement;
         elementoId = elemento.querySelector('a').getAttribute('data-id');
@@ -88,7 +88,7 @@ function eliminarElemento(e) {
 
 function vaciarCarrito() {
 
-    while(lista.firstChild) {
+    while (lista.firstChild) {
         lista.replaceChild(lista.firstChild);
     }
     return false;
