@@ -119,7 +119,7 @@ td {
 }
 
 .borrar {
-    background-color: #e09635;
+    background-color:#df8005;
     border-radius: 50%;
     padding: 5px 10px;
     text-decoration: none;
@@ -161,7 +161,7 @@ td {
 }
 
 .header-txt span {
-    color: #ffae00;
+    color:#df8005;
 
 }
 
@@ -169,7 +169,7 @@ td {
     display: inline-block;
     padding: 13px 45px;
     border-radius: 25px;
-    background-color: #ff9000;
+    background-color: #df8005;
     font-size: 16px;
     color: beige;
     text-transform: capitalize;
@@ -217,7 +217,7 @@ p {
 .breakfast-1 {
     display: flex;
     align-items: center;
-    background-color: #ff9000;
+    background-color:#df8005;
     padding: 10px;
     border-radius: 15px;
     width: 200px;
@@ -280,7 +280,7 @@ p {
 }
 
 .box {
-    border-top: 2px solid #ff9000;
+    border-top: 2px solid #df8005;
     padding: 20px;
     border-radius: 15px;
     z-index: 1000;
@@ -312,11 +312,11 @@ p {
 
 .precio {
     font-size: 15px;
-    color: #ff9000;
+    color: #df8005;
 }
 
 .btn-2 {
-    background-color: #ff9000;
+    background-color: #df8005;
     margin-top: 50px;
     display: inline-block;
     padding: 13px 35px;
@@ -334,13 +334,13 @@ p {
 .btn-3 {
     display: inline-block;
     padding: 5px 25px;
-    background-color: #ff9000;
+    background-color: #df8005;
     color: beige;
     border-radius: 10px;
 }
 
 .btn-3:hover {
-    background-color: #ef8700;
+    background-color:  #ef8700;
 }
 
 .app {
