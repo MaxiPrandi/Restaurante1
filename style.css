@@ -42,14 +42,7 @@ in .header {
     z-index: 1000;
 }
 
-/*
-.logo {
-    font-size: 25px;
-    color: #ff9000;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-*/
+
 .logo img {
     width: 100px;
     margin: 10px 0;
@@ -408,6 +401,8 @@ p {
 
     .menu label {
         display: initial;
+        position: relative;
+        right: 60%;
     }
 
     .menu .navbar {
@@ -429,7 +424,8 @@ p {
     }
 
     .logo {
-        display: none;
+        position: relative;
+        left: 20%;
     }
 
     #menu:checked~.navbar {
